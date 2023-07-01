@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sheet.css">
+</head>
+<body>
+
+    <div class="content">
+        <div class="image">
+            <img src="./logo-xl.png" alt="logo">
+        </div>
+
+        <div class="table">
+            <form class="control">
+                <div id="header">
+                    <h2>ĐĂNG KÝ LÁI THỬ</h2>
+                    <p>Để đăng ký lái thử, Quý khách cần cung cấp giấy phép lái xe cho VinFast</p>
+    
+                    <div class="form">
+                        <div class="type">
+                            <div class="car">
+                                <a href="./dangkilaixe.html">Xe ô tô</a>
+                            </div>
+                        </div>
+                        <div class="type">
+                            <div class="motorbike">
+                                Xe máy điện
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="details model">
+                        <span>LỰA CHỌN MẪU XE</span>
+                        <div class="input">
+                            
+                            <select name="Enter" id="product">
+                                <option id="attend" disabled selected style="display:none;">Mẫu xe</option>
+                                <option data-id="VF 8" value="VF 8" data-type="CAR">VF 8
+                                </option>
+                                <option data-id="VF e34" value="VF e34" data-type="CAR">VF e34
+                                </option>
+                            </select>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="details showroom">
+                        <span>LỰA CHỌN ĐỊA ĐIỂM</span>
+                        <div class="selection">
+                            <div class="input" >
+                                <select name="City" id="City" placeholder="Tỉnh thành" data-search-placeholder="Tìm kiếm Tỉnh thành">
+                                    <option id="attend" disabled selected style="display:none;">Tỉnh thành</option>
+                                </select>
+                                
+                            </div>
+                            <div class="input">
+                                <select name="showroom" id="showroom" data-search-placeholder="Tìm kiếm Showroom">
+                                    <option id="attend" disabled selected style="display:none;">Showroom</option>
+                                </select>
+                            </div>
+                        </div>
+                
+                    </div>
+    
+                    <div class="details customer">
+                        <span>THÔNG TIN KHÁCH HÀNG</span>
+                        <div class="selection">
+                            <div class="input">
+                                <input placeholder="Họ và tên Quý khách" id="Name" maxlength="80"
+                                    data-invalid="Vui lòng nhập họ và tên" name="last_name" size="20" type="text"
+                                    class="custom-required js_numText" value="" fdprocessedid="hk73vs">
+                                <div class="invalid-feedback"></div>
+                            </div>
+        
+                            <div class="input">
+                                <input placeholder="Số điện thoại" id="phone" maxlength="12" name="phone" size="20" type="text"
+                                    class="phone" value="" data-invalid="Tối thiểu 10 chữ số" pattern="^(0|\+[0-9]{2})\d{9}$">
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+    
+                        <div class="input">
+                            <input placeholder="vidu@gmail.com" id="email" name="email" type="text" class="email" value=""
+                                data-invalid="Sai định dạng email"
+                                pattern="^([A-Za-z0-9_\-\.])+\@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,20}))$">
+                            <div class="invalid-feedback"></div>
+                        </div>
+                    </div>
+    
+                    <div class="details box">
+                        <span>YÊU CẦU KHÁC</span>
+                        <div class="note">
+                            <input class="noted" type="text" name="noted" value=""
+                                placeholder="Ghi yêu cầu của Quý khách tại đây" maxlength="50">
+                            <div class="invalid-feedback"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer">
+                    <button class="btn btn-primary btn-register-driver" id="btn-register-driver" disabled="disabled"
+                        admicro-data-event="GET_VALUE" admicro-data-auto="1" admicro-data-order="true">ĐĂNG KÝ LÁI THỬ
+                    </button>
+                    <hr>
+                    <a href="tel:1900232389">
+                        <p class="hotline">Mọi thắc mắc xin liên hệ - HOTLINE -
+                            <span>1900 23 23 89</span>
+                        </p>
+                    </a>
+                </div>
+            </form>
+        </div>
+
+        
+    </div>
+
+    
+</body>
+</html>
